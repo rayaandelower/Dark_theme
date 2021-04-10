@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/07128b7fc2.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- media query link -->
+    <link rel="stylesheet" href="css/media.css" />
+    
+  <title>Dark theme</title>
+</head>
+<body>
+  <section>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- ========LOGO========= -->
+        <a class="navbar-brand logo" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+        <!-- =======LOGO========= -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <!-- =====MENU START======= -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hire Me</a>
+            </li>
+          </ul>
+          <!-- =====MENU END========= -->
+          <img src="images/moon.png" id="m_icon" alt="moon">
+        </div>
+    </nav>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="h_text">
+          <h1>I'm <span>Kate</span> Amelia</h1>
+          <p>This is my offcial portfolio website to showcase my all works related to web development and UI design</p>
+          <button type="button" class="btn h_btn ">Download CV</button>
+
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="h_img">
+          <img src="images/pattern.png" class="back_img" alt="banner">
+          <img src="images/girl.png" class="img-fluid front_img" alt="banner">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+ 
+ <!-- js lnks -->
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
+ <script>
+   var icon = document.getElementById("m_icon");
+   icon.onclick = function(){
+     document.body.classList.toggle("dark-theme");
+     if(document.body.classList.contains("dark-theme")){
+       icon.src = "images/sun.png";
+     }else{
+       icon.src = "images/moon.png";
+     }
+   }
+ </script>
+</body>
+</html>

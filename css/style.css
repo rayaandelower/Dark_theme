@@ -1,0 +1,94 @@
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color: #212121;
+
+}
+.dark-theme{
+    --primary-color:#000106!important;
+    --secondary-color: #fff!important; 
+
+}
+body{
+    font-family: sans-serif;
+    background-color:var(--primary-color);
+}
+
+.logo img{
+    width: 100%;
+    cursor: pointer;
+}
+.menu ul li a{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: var(--secondary-color)!important;
+    text-transform: uppercase;
+    margin-right: 30px;
+    transition: 3s;
+}
+.menu ul li a:hover{
+    color: #ff4321!important;
+}
+#m_icon{
+    width: 25px;
+}
+.h_btn{
+    background-color:  var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin:20px 0;
+    padding: 10px 15px;
+    transition: 3s;
+}
+.h_btn:hover{
+    background-color: #ff4321!important;
+    color: #ffffff;
+}
+.h_text{
+margin-top: 50%;
+}
+.h_text h1{
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color:  var(--secondary-color);
+    margin: 20px 0;
+}
+.h_text h1 span{
+    color: #ff4321;
+}
+.h_text p{
+    color: var(--secondary-color);
+    line-height: 22px;
+}
+.h_img{
+    position: relative;
+}
+.h_img img {
+    /* height: 100%; */
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-55%,105%);
+    transition: bottom 1s, left 1s;
+}
+.h_img:hover .back_img{
+    bottom: 40px;
+
+}
+.h_img:hover .front_img{
+    left: 54%;
+
+}
+.social_icon{
+    margin-top: 22%;
+}
+.social_icon a{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    transition: 3s;
+
+}
+.social_icon a:hover{
+    color: #ff4321!important;
+}
